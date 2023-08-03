@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="https://github.com/marizee/GSoC-2023/blob/main/sagemath.png" height="155">
+</p>
 
 ## Project overview
 
