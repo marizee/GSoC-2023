@@ -4,6 +4,8 @@
 
 ## Project overview
 
+### About SageMath
+
 ### Subject description
 Sage incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
@@ -13,17 +15,44 @@ This project aims to make this kind of enhancements, which would lead to more ef
 
 ## Contribution
 
-### MAX_MODULUS
+**Link to the forked repository :** https://github.com/marizee/sage
+
+### Updated the value of `MAX_MODULUS` of `Matrix_modn_dense_template` 
 
 * (Merged) [PR #35752][max_mod_float] : Clarification on the `MAX_MODULUS` of float matrices modulo `n`.
 * (Merged) [PR #35855][max_mod_double] : Extend `MAX_MODULUS` of `matrix_modn_dense_double.pyx`.
 
-### Zero matrix creation
+Linked issues :
 
-### Identity matrix and diagonal matrices
+* [Issue #35365][i_max_mod_float] : Misleading maximum `n` value in docstring of `matrix_modn_dense_float.pyx`.
+* [Issue #35806][i_max_mod_double] : Extend `MAX_MODULUS` for `matrix_modn_dense_double.pyx` from 23 bits to 27 bits.
 
-### Submatrices
+### Accelerated the zero matrix creation
+
+* (Not merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO.
+
+Linked issues :
+
+* [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template.
+* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense.
+
+
+### Speeded-up the creation of submatrices of `Matrix_modn_dense_template` matrices
+
+* (Not merged) [PR #36059][submatrices] : Speed up the creation of submatrices of Matrix_modn_dense_template matrices.
+
+
+## What is left to do
+
+
 
 
 [max_mod_float]: https://github.com/sagemath/sage/pull/35752
 [max_mod_double]: https://github.com/sagemath/sage/pull/35855
+[mat_creation]: https://github.com/sagemath/sage/pull/36068
+[submatrices]:https://github.com/sagemath/sage/pull/36059
+
+[i_max_mod_float]: https://github.com/sagemath/sage/issues/35365
+[i_max_mod_double]: https://github.com/sagemath/sage/issues/35806
+[i_mat_creation]: https://github.com/sagemath/sage/issues/28432
+[ii_mat_creation]: https://github.com/sagemath/sage/issues/35961
