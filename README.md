@@ -1,8 +1,11 @@
 <p align="center">
-    <img src="sagemath.png" height="200">
+    <img src ="gsoc.svg">
+    <img src="sagemath.png">
 </p>
 
 ## Project description
+
+### Enhancements in linear algebra
 
 Sage incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
@@ -41,7 +44,7 @@ Linked issues :
 
 ## What is left to do
 
-We still need to implement some FFLAS-FFPACK or Flint routines into SageMath such as the pivoting strategies mentioned in the project description. 
+We still need to implement some FFLAS-FFPACK or Flint routines, such as the pivoting strategies mentioned in the project description,  into SageMath. 
 
 
 [max_mod_float]: https://github.com/sagemath/sage/pull/35752
