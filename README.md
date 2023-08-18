@@ -2,11 +2,8 @@
     <img src="sagemath.png" height="200">
 </p>
 
-## Project overview
+## Project description
 
-### About SageMath
-
-### Subject description
 Sage incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
 However, several aspects make the integration of these libraries not yet fully satisfactory. For example, working over a prime field with a prime below about 20 bits, the mere creation of a zero matrix in SageMath takes roughly as long as the call of the underlying fast reduced echelon form procedure (performed by LinBox / FFLAS-FFPACK in this case). Still about FFLAS-FFPACK: several available tools in this library are not offered through the Sage interface, constraining the user experience; for example, some pivoting strategies are not available, despite their usefulness in some situations e.g. when one is interested in the preservation of some rank profile properties. Finally, the integration of linear algebra implementations from Flint has been initiated, with a good amount of work already done, but is not fully finalized and has not been merged into Sage.
@@ -17,7 +14,7 @@ This project aims to make this kind of enhancements, which would lead to more ef
 
 **Link to the forked repository :** https://github.com/marizee/sage
 
-### Updated the value of `MAX_MODULUS` of `Matrix_modn_dense_template` 
+### Updated the value of `MAX_MODULUS` of `Matrix_modn_dense_template` matrices 
 
 * (Merged) [PR #35752][max_mod_float] : Clarification on the `MAX_MODULUS` of float matrices modulo `n`.
 * (Merged) [PR #35855][max_mod_double] : Extend `MAX_MODULUS` of `matrix_modn_dense_double.pyx`.
@@ -29,7 +26,8 @@ Linked issues :
 
 ### Accelerated the zero matrix creation
 
-* (Not merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO.
+* (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO.
+* (Not merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
 
 Linked issues :
 
@@ -41,15 +39,15 @@ Linked issues :
 
 * (Not merged) [PR #36059][submatrices] : Speed up the creation of submatrices of Matrix_modn_dense_template matrices.
 
-
 ## What is left to do
 
-
+We still need to implement some FFLAS-FFPACK or Flint routines into SageMath such as the pivoting strategies mentioned in the project description. 
 
 
 [max_mod_float]: https://github.com/sagemath/sage/pull/35752
 [max_mod_double]: https://github.com/sagemath/sage/pull/35855
 [mat_creation]: https://github.com/sagemath/sage/pull/36068
+[zero_mat]: https://github.com/sagemath/sage/pull/36093
 [submatrices]:https://github.com/sagemath/sage/pull/36059
 
 [i_max_mod_float]: https://github.com/sagemath/sage/issues/35365
