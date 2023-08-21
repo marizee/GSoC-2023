@@ -18,7 +18,7 @@ This project aims to make this kind of enhancements, which would lead to more ef
 
 ## Contribution
 
-**Link to the forked repository :** https://github.com/marizee/sage
+**Link to the forked repository :** [https://github.com/marizee/sage](https://github.com/marizee/sage)
 
 
 
@@ -34,7 +34,7 @@ Related issues :
 
 ### Accelerated the zero matrix creation
 
-* _(Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO._ by my mentor
+* (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _by my mentor_
 * (Not merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
 
 Related issues :
