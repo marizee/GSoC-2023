@@ -1,13 +1,17 @@
 <p align="center">
-    <img src ="gsoc.svg">
-    <img src="sagemath.png">
+    <a href="https://summerofcode.withgoogle.com/">
+        <img src="gsoc.svg">
+    </a>
+    <a href="https://www.sagemath.org/index.html">
+        <img src="sagemath.png">
+    </a>
 </p>
 
 ## Project description
 
 ### Enhancements in linear algebra
 
-**Mentors** : M. Vincent NEIGER, M. Clement PERNET
+**Mentor** : M. Vincent NEIGER
 
 Sage incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
@@ -29,8 +33,8 @@ This project aims to make this kind of enhancements, which would lead to more ef
 
 Related issues :
 
-* [Issue #35365][i_max_mod_float] : Misleading maximum `n` value in docstring of `matrix_modn_dense_float.pyx`.
-* [Issue #35806][i_max_mod_double] : Extend `MAX_MODULUS` for `matrix_modn_dense_double.pyx` from 23 bits to 27 bits.
+* [Issue #35365][i_max_mod_float] : Misleading maximum `n` value in docstring of `matrix_modn_dense_float.pyx`. (Closed)
+* [Issue #35806][i_max_mod_double] : Extend `MAX_MODULUS` for `matrix_modn_dense_double.pyx` from 23 bits to 27 bits. (Closed)
 
 ### Accelerated the zero matrix creation
 
@@ -39,9 +43,11 @@ Related issues :
 
 Related issues :
 
-* [Issue #36065][i_scalar_creation] : Matrix creation from a scalar fails in some cases.
-* [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template.
-* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense.
+* [Issue #36065][i_scalar_creation] : Matrix creation from a scalar fails in some cases. (Closed)
+* [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template. (Open)
+* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense. (Open)
+* [Issue #36104][i_fail_input] : Matrix construction over prime field fails for some types of inputs. (Closed)  
+  _small bug detected during the study of zero matrix creation_
 
 
 ### Speeded-up the creation of submatrices of `Matrix_modn_dense_template` matrices
@@ -52,9 +58,9 @@ Related issues :
 
 The matrix creation issue took longer than expected. Although we are satisfied with the amount of enhancements done this summer, there are remaining issues to be treated given the original project proposal.
 
-* Merge not merged pull requests.
-* Resolve issue _copy_zero.
-* Implement some FFLAS-FFPACK or Flint routines, such as the pivoting strategies.
+* Handle the small bug in [Issue #36104][i_fail_input]
+* Resolve the zero matrix copy issue .
+* Incorporate additional FFLAS-FFPACK or Flint routines/functionalities into SageMath, such as pivoting strategies.
 * Improve sparse matrices computations.
 
 
@@ -69,3 +75,4 @@ The matrix creation issue took longer than expected. Although we are satisfied w
 [i_scalar_creation]: https://github.com/sagemath/sage/issues/36065
 [i_mat_creation]: https://github.com/sagemath/sage/issues/28432
 [ii_mat_creation]: https://github.com/sagemath/sage/issues/35961
+[i_fail_input]: https://github.com/sagemath/sage/issues/36104
