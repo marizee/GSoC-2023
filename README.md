@@ -52,7 +52,7 @@ Related issues :
 
 ### Speeded-up the creation of submatrices of `Matrix_modn_dense_template` matrices
 
-* (Not merged) [PR #36059][submatrices] : Speed up the creation of submatrices of Matrix_modn_dense_template matrices.
+* (Not merged) [PR #36059][submatrices] : Speed up the creation of submatrices of `Matrix_modn_dense_template` matrices.
 
 ## What is left to do
 
