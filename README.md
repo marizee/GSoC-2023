@@ -7,7 +7,7 @@
 
 ### Enhancements in linear algebra
 
-Mentor : M. Vincent NEIGER
+**Mentors** : M. Vincent NEIGER, M. Clement PERNET
 
 Sage incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
@@ -34,7 +34,7 @@ Related issues :
 
 ### Accelerated the zero matrix creation
 
-* (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _by my mentor_
+* (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _submitted by my mentor_
 * (Not merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
 
 Related issues :
@@ -50,7 +50,12 @@ Related issues :
 
 ## What is left to do
 
-We still need to implement some FFLAS-FFPACK or Flint routines, such as the pivoting strategies mentioned in the project description,  into SageMath. 
+The matrix creation issue took longer than expected. Although we are satisfied with the amount of enhancements done this summer, there are remaining issues to be treated given the original project proposal.
+
+* Merge not merged pull requests.
+* Resolve issue _copy_zero.
+* Implement some FFLAS-FFPACK or Flint routines, such as the pivoting strategies.
+* Improve sparse matrices computations.
 
 
 [max_mod_float]: https://github.com/sagemath/sage/pull/35752
