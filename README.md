@@ -11,7 +11,7 @@
 
 ### Enhancements in linear algebra in SageMath
 
-**Mentor** : M. Vincent NEIGER
+**Mentor** : [M. Vincent NEIGER](https://vincent.neiger.science/) (Sorbonne Université)
 
 SageMath incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
