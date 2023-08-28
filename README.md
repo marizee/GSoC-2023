@@ -46,7 +46,7 @@ Related issues :
 * [Issue #36065][i_scalar_creation] : Matrix creation from a scalar fails in some cases. (Closed)
 * [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template. (Open)
 * [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense. (Closed)
-* [Issue #36104][i_fail_input] : Matrix construction over prime field fails for some types of inputs. (Closed)  
+* [Issue #36104][i_fail_input] : Matrix construction over prime field fails for some types of inputs. (Open)  
   _small bug detected during the study of zero matrix creation_
 
 
