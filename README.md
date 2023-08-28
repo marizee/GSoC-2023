@@ -11,7 +11,7 @@
 
 ### Enhancements in linear algebra in SageMath
 
-**Mentor** : [M. Vincent NEIGER](https://vincent.neiger.science/) (Sorbonne Université)
+**Mentor**: [M. Vincent NEIGER](https://vincent.neiger.science/) (Sorbonne Université)
 
 SageMath incorporates state-of-the-art libraries for exact linear algebra computations, such as matrix multiplication, reduced echelon form, linear system solving, when the coefficients are in an exact domain such as the integers or finite fields.
 
@@ -22,37 +22,37 @@ This project aims to make this kind of enhancements, which would lead to more ef
 
 ## Contribution
 
-**Link to the forked repository :** [https://github.com/marizee/sage](https://github.com/marizee/sage)
+**Link to the forked repository:** [https://github.com/marizee/sage](https://github.com/marizee/sage)
 
 
 
 ### Updated the value of `MAX_MODULUS` of `Matrix_modn_dense_template` matrices 
 
-* (Merged) [PR #35752][max_mod_float] : Clarification on the `MAX_MODULUS` of float matrices modulo `n`.
-* (Merged) [PR #35855][max_mod_double] : Extend `MAX_MODULUS` of `matrix_modn_dense_double.pyx`.
+* (Merged) [PR #35752][max_mod_float]: Clarification on the `MAX_MODULUS` of float matrices modulo `n`.
+* (Merged) [PR #35855][max_mod_double]: Extend `MAX_MODULUS` of `matrix_modn_dense_double.pyx`.
 
-Related issues :
+Related issues:
 
-* [Issue #35365][i_max_mod_float] : Misleading maximum `n` value in docstring of `matrix_modn_dense_float.pyx`. (Closed)
-* [Issue #35806][i_max_mod_double] : Extend `MAX_MODULUS` for `matrix_modn_dense_double.pyx` from 23 bits to 27 bits. (Closed)
+* [Issue #35365][i_max_mod_float]: Misleading maximum `n` value in docstring of `matrix_modn_dense_float.pyx`. (Closed)
+* [Issue #35806][i_max_mod_double]: Extend `MAX_MODULUS` for `matrix_modn_dense_double.pyx` from 23 bits to 27 bits. (Closed)
 
 ### Accelerated the zero matrix creation
 
-* (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _submitted by my mentor_
-* (Merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
+* (Merged) [PR #36068][mat_creation]: Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _submitted by my mentor_
+* (Merged) [PR 36093][zero_mat]: Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
 
-Related issues :
+Related issues:
 
-* [Issue #36065][i_scalar_creation] : Matrix creation from a scalar fails in some cases. (Closed)
-* [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template. (Closed)
-* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense. (Closed)
-* [Issue #36104][i_fail_input] : Matrix construction over prime field fails for some types of inputs. (Open)  
+* [Issue #36065][i_scalar_creation]: Matrix creation from a scalar fails in some cases. (Closed)
+* [Issue #28432][i_mat_creation]: Speed-up constructor of Matrix_modn_dense_template. (Closed)
+* [Issue #35961][ii_mat_creation]: Accelerating the construction of matrices of type Matrix_modn_dense. (Closed)
+* [Issue #36104][i_fail_input]: Matrix construction over prime field fails for some types of inputs. (Open)  
   _small bug detected during the study of zero matrix creation_
 
 
 ### Speeded-up the creation of submatrices of `Matrix_modn_dense_template` matrices
 
-* (Merged) [PR #36059][submatrices] : Speed up the creation of submatrices of `Matrix_modn_dense_template` matrices.
+* (Merged) [PR #36059][submatrices]: Speed up the creation of submatrices of `Matrix_modn_dense_template` matrices.
 
 ## What is left to do
 
