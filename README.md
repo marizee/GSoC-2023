@@ -59,7 +59,7 @@ Related issues :
 The matrix creation issue took longer than expected. Although we are satisfied with the amount of enhancements done this summer, there are remaining issues to be treated given the original project proposal.
 
 * Handle the small bug in [Issue #36104][i_fail_input]
-* Resolve the zero matrix copy issue .
+* Resolve [Issue #36146][i_copy_zmat].
 * Incorporate additional FFLAS-FFPACK or Flint routines/functionalities into SageMath, such as pivoting strategies.
 * Improve sparse matrices computations.
 
@@ -76,3 +76,4 @@ The matrix creation issue took longer than expected. Although we are satisfied w
 [i_mat_creation]: https://github.com/sagemath/sage/issues/28432
 [ii_mat_creation]: https://github.com/sagemath/sage/issues/35961
 [i_fail_input]: https://github.com/sagemath/sage/issues/36104
+[i_copy_zmat]: https://github.com/sagemath/sage/issues/36146
