@@ -39,20 +39,20 @@ Related issues :
 ### Accelerated the zero matrix creation
 
 * (Merged) [PR #36068][mat_creation] : Speed-up matrix construction by ensuring MatrixArgs type MA_ENTRIES_ZERO. _submitted by my mentor_
-* (Not merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
+* (Merged) [PR 36093][zero_mat] : Speed-up the creation of a zero matrix of type `Matrix_modn_dense_template`.
 
 Related issues :
 
 * [Issue #36065][i_scalar_creation] : Matrix creation from a scalar fails in some cases. (Closed)
 * [Issue #28432][i_mat_creation] : Speed-up constructor of Matrix_modn_dense_template. (Open)
-* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense. (Open)
+* [Issue #35961][ii_mat_creation] : Accelerating the construction of matrices of type Matrix_modn_dense. (Closed)
 * [Issue #36104][i_fail_input] : Matrix construction over prime field fails for some types of inputs. (Closed)  
   _small bug detected during the study of zero matrix creation_
 
 
 ### Speeded-up the creation of submatrices of `Matrix_modn_dense_template` matrices
 
-* (Not merged) [PR #36059][submatrices] : Speed up the creation of submatrices of `Matrix_modn_dense_template` matrices.
+* (Merged) [PR #36059][submatrices] : Speed up the creation of submatrices of `Matrix_modn_dense_template` matrices.
 
 ## What is left to do
 
