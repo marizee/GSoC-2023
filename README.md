@@ -7,6 +7,7 @@
     </a>
 </p>
 
+
 ## Project description
 
 ### Enhancements in linear algebra in SageMath
@@ -63,6 +64,9 @@ The matrix creation issue took longer than expected. Although we are satisfied w
 * Incorporate additional FFLAS-FFPACK or Flint routines/functionalities into SageMath, such as pivoting strategies.
 * Improve sparse matrices computations.
 
+## Additional content
+
+[Internship report](https://github.com/marizee/GSoC-2023/blob/main/internship_report.pdf): contains detailed descriptions of the enhancements listed above. (added on Oct. 30, 2023)
 
 [max_mod_float]: https://github.com/sagemath/sage/pull/35752
 [max_mod_double]: https://github.com/sagemath/sage/pull/35855
